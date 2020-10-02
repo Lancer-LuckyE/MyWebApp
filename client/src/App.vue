@@ -29,7 +29,7 @@
   }
 
   #app {
-    background-image: url("assets/background/music-player-2951399_1920.jpg");
+    background-image: url("assets/background/shapelined-_JBKdviweXI-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
