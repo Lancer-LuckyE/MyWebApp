@@ -2,7 +2,8 @@
   <div>
     <div class="row justify-content-center">
       <form @submit="register"
-            class="border border-primary rounded col-xl-5 col-lg-6 col-md-8 col-11 my-3 p-4 needs-validation" novalidate>
+            class="border border-primary rounded col-xl-5 col-lg-6 col-md-8 col-11 my-3 p-4 needs-validation"
+            novalidate>
         <h1>Sign Up</h1>
         <div v-if="this.error !== ''">
           <p style="color: red">
@@ -114,7 +115,7 @@
             'last_name': this.lastName,
             'first_name': this.firstName
           };
-          this.$store.dispatch('auth/auth_post', [path,postData]).then((res) => {
+          this.$store.dispatch('auth/auth_post', [path, postData]).then((res) => {
             console.log(res.data.msg);
             //this.$router.push('/user/login');
             const loginPath = '/api/user/login';
@@ -138,7 +139,7 @@
         }
       },
     },
-    watch:{
+    watch: {
       pw_confirm: {
         handler: function () {
           let PWConfirm = document.getElementById('RegisterPWConfirm');
